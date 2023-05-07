@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Yongtube (Youtube 클론코딩) 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Yongtube 앱 실행 방법
 
-In the project directory, you can run:
+### 실행 방법
 
-### `npm start`
+`yarn start`를 통해 프로젝트를 시작할 수 있습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Yongtube 사용해보기
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+아래의 링크에서 실제 작동되는 App을 확인할 수 있습니다.
 
-### `npm test`
+[🍿 Yongtube 사용해보기](https://matthew--roaring-kelpie-519f5d.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+# 프로젝트 파일 구조
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+제작 후 , 업로드 예정
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Commit Message Convention
 
-### `npm run eject`
+`feat`: 기능 추가, 삭제, 변경
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`fix`: 버그 수정
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`docs`: 문서 추가, 삭제, 변경 - 코드 수정없음
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`style`: 코드 형식, 정렬, 주석 등의 변경
+(세미콜론 추가 같은 코드 수정이 있으나, 기능에 변동 X)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`refactor`: 코드 리펙토링 (변수명, JS -> TS)
 
-## Learn More
+`test`: 테스트 코드 추가, 삭제, 변경 등
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`chore`: 위에 해당하지 않는 모든 변경, eg. 빌드 스크립트 수정, 패키지 배포 설정 변경
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 🍿 Yongtube 앱 핵심 기능
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [ ] `Search` 기능 구현
+- [ ] `Search` 검색값 바탕으로, 페이지 이동 구현 (Routing)
+- [ ] `YoutubeAPI` 활용 실제 실시간 동영상 / 정보 받아오기
+- [ ] `VideoCard` Component 제작 (영상 이미지, 제목, 게시자, 게시 일자)
+- [ ] 모바일 환경 반응형 디자인
+- [ ] `Video` 클릭 시 `Video Detail` 이동
+- [ ] `useAxios` hook 제작
+- [ ] `axios` `param` 접근
+- [ ] `netlify` 활용 배포! (버그 수정 후)
+- [ ] `PostMan` 이용 API 관리!
+- [ ] `TailWindCSS`활용 스타일링
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🍿 Yongtube기능 실행 영상!
 
-### Making a Progressive Web App
+![앱 사용영상]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### Trouble Shooting 🛠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+`🍿 Yongtube` 프로젝트를 진행하면서 발생한 `버그 수정`, `문제 해결`, 기능 구현시 `어려웠던 점 정리`, `성능 개선`, `작업 효율 향상` 들에 관해 정리한 기록입니다.
 
-### Deployment
+[프로젝트를 진행시 배운점들 정리]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+### 버그 발생시 ☎️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+연락 부탁드립니다. <dydals3440@gmail.com>
+
+1. 현재 국가변경시 App이 Crash되는 현상이 발생되어 수정중입니다. 수정 후 배포하겠습니다.
