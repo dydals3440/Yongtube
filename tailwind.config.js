@@ -2,7 +2,12 @@
 module.exports = {
   content: ['./src/**/*.{html,js,jsx}'],
   theme: {
-    extend: {},
+    extend: {
+      // text-brand로 접근가능.
+      colors: {
+        brand: '#FF0000',
+      },
+    },
   },
   plugins: [],
 };
