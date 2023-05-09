@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BsYoutube, BsSearch } from 'react-icons/bs';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import {
-  QueryClient,
-  QueryClientProvider,
-  useQuery,
-} from '@tanstack/react-query';
 
 export default function SearchHeader() {
   const [text, setText] = useState('');

@@ -16,6 +16,7 @@ body {
 }
 
 #root {
+  /* 전체 넓이는 full, 최대 넓이는 한정되있음 2xl만큼 */
   @apply w-full max-w-screen-2xl;
 }
 
