@@ -1,4 +1,6 @@
 export class Youtube {
+  // di 외부로부터 apiClient를 주입받음
+  //  외부로부터 주입받은 client를사용
   constructor(apiClient) {
     this.apiClient = apiClient;
   }
