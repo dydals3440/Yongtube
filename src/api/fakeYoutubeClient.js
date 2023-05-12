@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default class FakeYoutubeClient {
   // 생성시 아무것도 전달하지 않아도됨
-  constructor() {}
+  // constructor() {}
   async search({ params }) {
     return axios.get(
       `/videos/${params.relatedToVideoId ? 'related' : 'search'}.json`
