@@ -3,11 +3,16 @@ import axios from 'axios';
 export default class FakeYoutubeClient {
   // 생성시 아무것도 전달하지 않아도됨
   constructor() {}
-  async search() {
-    return axios.get('/videos/search.json');
+  async search({ params }) {
+    return axios.get(
+      `/videos/${params.relatedToVideoId ? 'related' : 'search'}.json`
+    );
   }
   async videos() {
     return axios.get('/videos/popular.json');
+  }
+  async channels() {
+    return axios.get('/videos/channel.json');
   }
 }
 

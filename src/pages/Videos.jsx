@@ -14,7 +14,6 @@ export default function Videos() {
   } = useQuery(['videos', keyword], () => youtube.search(keyword));
   return (
     <>
-      <div>Videos {keyword ? `🍿${keyword}` : `🎉Hot Trend Video`}</div>
       {isLoading && <p>로딩중입니다</p>}
       {error && <p>뭔가 에러가 발생했습니다</p>}
       {videos && (

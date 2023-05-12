@@ -11,7 +11,9 @@ export default function VideoCard({ video }) {
     // 이미 video에 관한 정보는 prop을 통해 받아옴, 즉 해당하는 정보들도 같이 전달해야함 react router에서 부가적인 객체를 전달할떄는 2번쨰 인자에 객체를 전달하면 됨 video: video video키에 video value전달
     <li
       onClick={() => {
-        navigate(`videos/watch/${video.id}`, { state: { video } });
+        // navigate 사용시 / 홈경로(절대경로)를 명시해주어야함. 안그러면 상대경로로 들어가게 됨
+        // 최종루트에서 videos로 들어가게 해야하는데, 그냥 / 없이 작성시 현재 경로에서 추가해줌. 최상위 루트에서 시작하고싶다면 '/'를 붙여서 실행해야함.
+        navigate(`/videos/watch/${video.id}`, { state: { video } });
       }}
     >
       <img
