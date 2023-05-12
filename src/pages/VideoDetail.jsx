@@ -1,14 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import ChannelInfo from '../components/ChannelInfo';
 import RelatedVideos from '../components/RelatedVideos';
+import ChannelInfo from '../components/ChannelInfo';
 export default function VideoDetail() {
   //  video 정보를읽음
   const {
     state: { video },
   } = useLocation();
   const { title, channelId, channelTitle, description } = video.snippet;
-  console.log(video);
+  // console.log(video);
   return (
     <section className='flex flex-col lg:flex-row'>
       <article className='basis-4/6'>
